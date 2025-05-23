@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>CP3 WebDev</title>
+    </head>
+
+  
+    <body>
+         <header>
+        <h1>Produtos</h1>
+    </header>
+   
+    <main>
+        <button id="btnListar">Listar Todos os Produtos</button>
+
+        <form id="filtroForm">
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+            <option value="">Todas</option>
+            <option value="Roupa">Roupas</option>
+            <option value="Sapato">Sapatos</option>
+            <option value="Chapéu">Chapéus</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="disponiveis"/>
+            Mostrar disponiveis
+        </label>
+
+        <button type="submit">Filtrar</button>
+        </form>
+
+        <div id="produtosContainer"></div>
+
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            <p>Email: contato@lojaonline.com</p>
+            <p>São Paulo, Brasil</p>
+            <p>© 2025 Loja Online. Todos os direitos reservados</p>
+        </div> 
+    </footer>
+    <script src="app.js"></script>
+    </body>
+</html>
